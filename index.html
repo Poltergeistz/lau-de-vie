@@ -66,6 +66,11 @@
       rel="icon"
       href="favicon.ico"
     />
+    <link
+      rel="manifest"
+      href="/site.webmanifest"
+    />
+
     <meta
       name="theme-color"
       content="#C9D8C5"
@@ -103,11 +108,11 @@
 
     <style>
       :root {
-        --primary: #c9d8c5;
-        --secondary: #f5e3e0;
-        --accent: #d6a7a2;
+        --primary: #95a390;/*#c9d8c5; #a8b8a3;*/
+        --secondary: #f5e3e0;/* #f5e3e0; */
+        --accent: #d6a7a2;/*#d6a7a2;*/
         --text: #8a8a8a;
-        --heading: #d6a7a2;
+        --heading: #d6a7a2;/*#d6a7a2;*/
         --bg: linear-gradient(135deg, #f8f6f3 0%, #f5f3f0 100%);
 
         --font-body: "Raviraj", serif;
@@ -204,7 +209,7 @@
         transform: translate(-50%, -50%);
         width: 280px;
         height: 280px;
-        opacity: 0.15;
+        opacity: 1;
         z-index: 1;
       }
 
@@ -275,7 +280,7 @@
       /* Floating elements */
       .floating-element {
         position: absolute;
-        opacity: 0.1;
+        opacity: 0.5;
         z-index: 1;
         font-size: 2.5rem;
       }
@@ -900,15 +905,15 @@
             <div class="subtitle">Pour toi qui portes tout, tout le temps.</div>
             <a
               class="clients-count"
-              href="#"
+              href="#testimonials"
               target="_blank"
               rel="noopener"
             >
             </a>
             <h1>Ce n'est pas <em>"juste dans ta tête"</em></h1>
             <p class="fade-in-text">
-              Ton corps te parle. Il crie parfois. Mais personne ne t'a jamais
-              dit pourquoi.<br />
+              Ton corps te parle. Il crie parfois.<br /> Mais personne ne t'a jamais
+              dit <br /> <em>pourquoi</em>.
             </p>
             <a
               href="#reservation"
@@ -931,7 +936,7 @@
           <div class="subtitle">Pour toi qui portes tout</div>
           <a
             class="clients-count"
-            href="#"
+            href="#testimonials"
             target="_blank"
             rel="noopener"
           >
@@ -979,7 +984,7 @@
         </div>
       </section>
 
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <div class="container">
           <h2>Elles en parlent mieux que moi</h2>
           <div class="testimonial-text">
@@ -1042,8 +1047,8 @@
             et vraiment adapté à ton histoire.
           </p>
           <iframe
-            src="https://cal.com/lau-de-vie-molzmz/appel-decouverte-cultive-ton-jardin-interieur-30min"
-            title="Appel de Découverte - Réservation Laura"
+            src="https://cal.com/lau-de-vie-molzmz/"
+            title="Mes Prestations - Réservation Laura"
             aria-label="Réserver votre séance de naturopathie avec Laura"
           ></iframe>
         </div>
@@ -1223,7 +1228,7 @@
               trigger: el,
               start: "top 85%",
               toggleActions: "play none none reverse",
-              once: animateOnce
+              once: animateOnce,
             },
           });
         });
@@ -1242,7 +1247,7 @@
               start: "top 80%",
               end: "bottom 20%",
               toggleActions: "play none none reverse",
-              once: animateOnce
+              once: animateOnce,
             },
           });
         });
@@ -1258,7 +1263,7 @@
             trigger: "footer",
             start: "top 90%",
             toggleActions: "play none none reverse",
-            once: animateOnce
+            once: animateOnce,
           },
         });
       }
